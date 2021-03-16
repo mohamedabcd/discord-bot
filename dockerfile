@@ -14,4 +14,4 @@ COPY .dockerignore
 
 COPY . .
 
-CMD ["node", "server.js"]
+CMD ["node", "index.js"]

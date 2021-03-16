@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+  docker_node:
+    container_name: conteneur_node
+    image: node
+    working_dir: /app
+    volumes:
+      - .:/app
+      - ./test:/test_discord_docker
+    ports:
+      - 4200:3000
+    command: bash -c "npm install discord.js && npm init && node index.ts"
