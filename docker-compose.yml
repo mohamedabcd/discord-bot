@@ -9,4 +9,4 @@ services:
       - ./test:/test_discord_docker
     ports:
       - 4200:3000
-    command: bash -c "npm install discord.js && npm init && node index.ts"
+    command: bash -c "npm install discord.js && npm init && npm run"
