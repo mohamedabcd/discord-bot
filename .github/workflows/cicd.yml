@@ -6,7 +6,6 @@ on:
       - "**"
 
 jobs:
-  lint:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -24,15 +23,5 @@ jobs:
     - name: Install dependencies
       run: npm i
 
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v2.3.4
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v2.1.5
-        with:
-          node-version: ${{ matrix.node-version }}
-          check-latest: true
-        
-      - name: start npm
-        run: npm start
+    - name: start npm
+      run: npm start
