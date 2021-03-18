@@ -43,7 +43,8 @@ let Bot = class Bot {
                     console.log("Response not sent.");
                 });
         });
-        return this.client.login(this.token);
+        //return this.client.login(this.token);
+        return this.client.login("ODIxNzA3OTc2ODk2MjgyNjU2.YFHpMA.Idu2GqjGqGhl-ScQ7ZarMQjyKCg");
     }
 };
 Bot = __decorate([
